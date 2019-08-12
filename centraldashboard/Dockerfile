@@ -1,1 +1,2 @@
 FROM gcr.io/kubeflow-images-public/centraldashboard:v20190614-v0-208-g17ef0ecd
+MAINTAINER mosaicwang <mosaicwang@gmail.com>

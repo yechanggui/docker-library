@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+docker save -o images_0_6.tar \
+    gcr.io/kubeflow-images-public/pytorch-operator:v0.5.1-2-gf8d09ba \
+    gcr.io/kubeflow-images-public/tf_operator:kubeflow-tf-operator-postsubmit-v1-b123a75-6659-7baf \
+    gcr.io/kubeflow-images-public/profile-controller:v20190228-v0.4.0-rc.1-192-g1a802656-dirty-f95773 \
+    argoproj/workflow-controller:v2.3.0 \
+    gcr.io/kubeflow-images-public/katib/suggestion-random:v0.1.2-alpha-156-g4ab3dbd \
+    gcr.io/kubeflow-images-public/katib/suggestion-bayesianoptimization:v0.1.2-alpha-156-g4ab3dbd \
+    gcr.io/kubeflow-images-public/katib/suggestion-grid:v0.1.2-alpha-156-g4ab3dbd \
+    gcr.io/kubeflow-images-public/katib/vizier-core-rest:v0.1.2-alpha-156-g4ab3dbd \
+    gcr.io/kubeflow-images-public/katib/vizier-core:v0.1.2-alpha-156-g4ab3dbd \
+    gcr.io/kubeflow-images-public/katib/studyjob-controller:v0.1.2-alpha-156-g4ab3dbd \
+    gcr.io/google_containers/spartakus-amd64:v1.1.0 \
+    mysql:8.0.3 \
+    gcr.io/kubeflow-images-public/kfam:v20190612-v0-170-ga06cdb79-dirty-a33ee4 \
+    gcr.io/kubeflow-images-public/jupyter-web-app:f8d85ad \
+    gcr.io/kubeflow-images-public/katib/katib-ui:v0.1.2-alpha-156-g4ab3dbd \
+    gcr.io/kubeflow-images-public/centraldashboard:v20190614-v0-208-g17ef0ecd \
+    gcr.io/kubeflow-images-public/notebook-controller:v20190614-v0-160-g386f2749-e3b0c4 \
+    mysql:5.6 \
+    minio/minio:RELEASE.2018-02-09T22-40-05Z \
+    gcr.io/ml-pipeline/frontend:0.1.22 \
+    gcr.io/ml-pipeline/scheduledworkflow:0.1.22 \
+    gcr.io/ml-pipeline/persistenceagent:0.1.22 \
+    gcr.io/ml-pipeline/api-server:0.1.22 \
+    quay.io/datawire/ambassador:0.37.0 \
